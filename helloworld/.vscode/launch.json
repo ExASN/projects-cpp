@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": true,
+      "externalConsole": false,
+      "cwd": "/Users/expeditoavelinodasilvaneto/Desktop/projects/helloworld",
+      "program": "/Users/expeditoavelinodasilvaneto/Desktop/projects/helloworld/build/Debug/outDebug",
+      "MIMode": "gdb"
+    }
+  ]
+}
