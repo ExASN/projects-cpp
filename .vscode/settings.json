@@ -3,12 +3,35 @@
     "cSpell.words": [
         "aluno",
         "aprovado",
+        "aqui",
+        "Aviao",
         "cadastrar",
+        "Carro",
+        "chaves",
         "Comando",
         "Deseja",
         "Digite",
+        "Escolha",
+        "estao",
+        "inicialização",
+        "invalida",
+        "limpa",
         "limpar",
+        "Moto",
+        "Onibus",
+        "Opcao",
         "outra",
-        "reprovado"
-    ]
+        "passagens",
+        "realizar",
+        "reprovado",
+        "suas",
+        "tipo",
+        "transporte",
+        "trem",
+        "variáveis"
+    ],
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp"
+    }
 }
