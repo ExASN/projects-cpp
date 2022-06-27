@@ -34,6 +34,7 @@ system ("clear");
     {
         if (p1[i]!='\0')
         {
+            p2[i] = '\0';
             n++;
         } else{
             break;
