@@ -1,2 +1,3 @@
 # projects-cpp
- Projetos ddidáticos de C++
+ Projetos didáticos em C++.
+ Projetos desenvolvidos, abordando cada uma das ferramentas disponíveis em uma linguagem poderosa...
