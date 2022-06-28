@@ -39,5 +39,4 @@ if (delta == 0)
 {
     cout << endl << "NAO EXISTEM RAIZES REAIS..." << endl;
 }
-
 }
