@@ -5,6 +5,7 @@ using namespace std;
 
 int main(){
     stack <string> carros;                      //Cria uma pilha que vai armazenar variáveis do tipo string. O nome da pilha é "carros".
+    cout << endl << carros.empty() << endl;     //Comando verifica e caso a pilha esteja vazia, retorna true ou 1.
     carros.push("Ford - Ka");                   //O pomando push("") insere um elemento no topo da pilha.
     carros.push("Ford - Ecosporte");
     carros.push("Renault - Sandero");
