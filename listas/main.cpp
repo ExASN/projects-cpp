@@ -6,10 +6,13 @@
 - pop_back() --> Retira o elemento que está no final da lista.
 - front() --> Retorna qual o valor que está no início da lista.
 - back() --> Retorna qual o valor que está no finla da lista.
+- sort() --> Ordena os itens armazenados na lista.
+- reverse() --> Inverte a ordem dos itens armazenados na lista.
 */
 //Cabeçalho
 #include <iostream>
-#include <list>     //Biblioteca que possui as funções para manipulação de listas.
+#include <list>         //Biblioteca que possui as funções para manipulação de listas.
+#include <iterator>     //Biblioteca que possui as funções de manipulação do iterator.
 
 //Definições globais
 using namespace std;
@@ -25,11 +28,12 @@ int main(){
     {
         IdPaciente.push_front(i);
     }
-
     //it = IdPaciente.begin();
-    advance(IdPaciente.begin(),5);
-    IdPaciente.insert(IdPaciente.begin(),0);
-
+    //advance(it,5);
+    //IdPaciente.insert
+    //cout << endl << IdPaciente.begin() << endl;
+    IdPaciente.reverse();
+    
     for (uint16_t i = 0; i < tam; i++)
     {
         cout << endl << IdPaciente.front() << endl;
