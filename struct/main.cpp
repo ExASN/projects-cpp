@@ -57,17 +57,19 @@ struct Aviao                    //Criação da struct Aviao com suas variáveis.
 };
 
 int main(){                     //Função principal do código.
-    Aviao av1, av2, av3;        //Instanciamento dos objetos av1, av2, av3 do tipo struct Aviao.
-    av1.insere("Executivo", "Jatinho", "Cinza", 500, 250);
-    av1.exibe();
-    av1.setVelInst(-200);
-    av1.setVelInst(600);
-    av1.setVelInst(200);
-    av1.exibe();
-    av2.insere("Combate", "F22", "Verde", 1500, 900);
-    av2.exibe();
-    av3.insere("Comercial", "Boeing - 737", "Branco", 2500, 1000);
-    av3.exibe();
+    Aviao *av=new Aviao[5];     //Instanciamento dos objetos av1, av2, av3 do tipo struct Aviao.
+
+    av[0].insere("Executivo", "Jatinho", "Cinza", 500, 250);
+    av[0].setVelInst(-200);
+    av[0].setVelInst(600);
+    av[0].setVelInst(200);
+    av[1].insere("Combate", "F22", "Verde", 1500, 900);
+    av[2].insere("Comercial", "Boeing - 737", "Branco", 2500, 1000);
+    for (size_t i = 0; i < 3; i++)
+    {
+        av[i].exibe();
+    }
+    
     /*  --Manipulacão do STRUCT de forma manual.
     //Atribuição de valores das variáveis dos objetos instanciados.
     av1.nome = "Executivo";
