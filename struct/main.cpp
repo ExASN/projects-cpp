@@ -6,17 +6,65 @@
 //Definição de parametros globais
 using namespace std;
 //Desenvolvimento
-struct Aviao                //Criação da struct Aviao com suas variáveis.
+struct Aviao                    //Criação da struct Aviao com suas variáveis.
 {
     string nome;
     string modelo;
     string cor;
     int pot;
     int velMax;
+    int velInst;
+
+    //Métodos do objeto.
+    //Função para atribuição de valores das variáveis.
+    void insere(string stnome, string stmodelo, string stcor, int stpot, int stvelmax){
+        nome = stnome;
+        modelo = stmodelo;
+        cor = stcor;
+        pot = stpot;
+        velMax = stvelmax;
+        velInst = 0;
+    }
+    //Função para exibir os valores dos atributos.
+    void exibe(){
+        cout << "Nome..................: " << nome << "\n";
+        cout << "Modelo................: " << modelo << "\n";
+        cout << "Cor...................: " << cor << "\n";
+        cout << "Potencia..............: " << pot << "\n";
+        cout << "Velocidade Maxima.....: " << velMax << "\n";
+        cout << "Velocidade Instantanea: " << velInst << "\n";
+        cout << "=========================================== \n";
+    }
+    //Função para alterar a velocidade instantânea.
+    void setVelInst(int stvelinst){
+        if (stvelinst > velMax)
+        {
+            velInst = velMax;
+            cout << "Velocidade Maxima Atingida: " << velInst << "\n";
+            cout << "=========================================== \n";
+        }else if (stvelinst < 0)
+        {
+            velInst=0;
+            cout << "Velocidade Minima Atingida: " << velInst << "\n";
+            cout << "=========================================== \n";
+        }else if (stvelinst > 0 && stvelinst < velMax)
+        {
+            velInst = stvelinst;
+            cout << "Velocidade autal: " << velInst << "\n";
+            cout << "=========================================== \n";
+        }
+    }
 };
 
-int main(){
+int main(){                     //Função principal do código.
     Aviao av1, av2, av3;        //Instanciamento dos objetos av1, av2, av3 do tipo struct Aviao.
+    av1.insere("Executivo", "Jatinho", "Cinza", 500, 250);
+    av1.exibe();
+    av1.setVelInst(-200);
+    av1.setVelInst(600);
+    av1.setVelInst(200);
+    av1.exibe();
+    /*  --Manipulacão do STRUCT de forma manual.
     //Atribuição de valores das variáveis dos objetos instanciados.
     av1.nome = "Executivo";
     av2.nome = "Combate";
@@ -56,5 +104,6 @@ int main(){
     cout << "Potencia.........: " << av3.pot << "\n";
     cout << "Velocidade Maxima: " << av3.velMax << "\n";
     //========================
+    */
     return 0;
 }
