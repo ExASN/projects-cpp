@@ -64,6 +64,10 @@ int main(){                     //Função principal do código.
     av1.setVelInst(600);
     av1.setVelInst(200);
     av1.exibe();
+    av2.insere("Combate", "F22", "Verde", 1500, 900);
+    av2.exibe();
+    av3.insere("Comercial", "Boeing - 737", "Branco", 2500, 1000);
+    av3.exibe();
     /*  --Manipulacão do STRUCT de forma manual.
     //Atribuição de valores das variáveis dos objetos instanciados.
     av1.nome = "Executivo";
