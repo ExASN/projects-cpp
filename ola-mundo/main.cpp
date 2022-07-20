@@ -2,11 +2,11 @@
 std::string nome;
 int x;
 int main(){
-    std::cout<<"Digite seu nome:\n";
+    std::cout<<"Digite seu nome:"<<std::endl;
     std::cin>>nome;
     std::cout<<nome<<"\n";
-    std::cout<<"Digite sua idade:\n";
+    std::cout<<"Digite sua idade:"<<std::endl;
     std::cin>>x;
-    std::cout<<x<<"\n";
+    std::cout<<x<<std::endl;
     return 0;
 }
