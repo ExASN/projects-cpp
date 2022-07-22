@@ -11,8 +11,8 @@ using namespace std;
 class Cliente
 {
 private:
-    int id, cpf, rg, cep, nResidencia, pacote, tipoConta, nAgencia, nConta;
-    string firstName, lastName, logradouro, complemento;
+    int id, nResidencia, pacote, tipoConta, nAgencia, nConta;
+    string firstName, lastName, logradouro, cep, cpf, rg, complemento;
     //date nascimento;
     
 public:
@@ -20,9 +20,9 @@ public:
     void setSobreNome(string snm);
     void setLogradouro(string log);
     void setComplemento(string cmp);
-    void setCpf(int c);
-    void setRg(int r);
-    void setCep(int ce);
+    void setCpf(string c);
+    void setRg(string r);
+    void setCep(string ce);
     void setNresidencia(int n);
     void setNagencia(int na);
     void setNconta(int nc);
@@ -32,9 +32,9 @@ public:
     string getSobreNome();
     string getLogradouro();
     string getComplemento();
-    int getCPF();
-    int getRg();
-    int getCep();
+    string getCPF();
+    string getRg();
+    string getCep();
     int getNresidencia();
     int getNagencia();
     int getNconta();
@@ -53,9 +53,9 @@ Cliente::Cliente(int perfil, int tpConta, int idCliente)    //Método construtor
     id = idCliente;
     nAgencia = 0;
     nConta = 0;
-    cpf = 0;
-    rg = 0;
-    cep = 0;
+    cpf = "00000000";
+    rg = "00000000";
+    cep = "00000000";
     nResidencia = 0;
     firstName = "Cliente Novo";
     lastName = "Cliente Novo";
@@ -83,13 +83,13 @@ void Cliente::setLogradouro(string log){
 void Cliente::setComplemento(string cmp){
     complemento=cmp;
 }
-void Cliente::setCpf(int c){
+void Cliente::setCpf(string c){
     cpf=c;
 }
-void Cliente::setRg(int r){
+void Cliente::setRg(string r){
     rg=r;
 }
-void Cliente::setCep(int ce){
+void Cliente::setCep(string ce){
     cep=ce;
 }
 void Cliente::setNresidencia(int n){
@@ -120,10 +120,10 @@ string Cliente::getNome(){
 string Cliente::getSobreNome(){
     return lastName;
 }
-int Cliente::getCPF(){
-    return firstName;
+string Cliente::getCPF(){
+    return cpf;
 }
-int Cliente::getRg(){
+string Cliente::getRg(){
     return rg;
 }
 string Cliente::getLogradouro(){
@@ -135,7 +135,7 @@ int Cliente::getNresidencia(){
 string Cliente::getComplemento(){
     return complemento;
 }
-int Cliente::getCep(){
+string Cliente::getCep(){
     return cep;
 }
 
@@ -147,8 +147,10 @@ void Cliente::Consulta(){
     cout<<"Cad. de Pesso Fisica..: "<<cpf<<endl;
     cout<<"Registro Geral........: "<<rg<<endl;
     cout<<"Endereço do Cliente...: "<<logradouro<<endl;
+    cout<<"Numero................: "<<nResidencia<<endl;
     cout<<"Complemento...........: "<<complemento<<endl;
     cout<<"CEP...................: "<<cep<<endl;
+    cout<<"=================================================="<<endl;
 }
 
 #endif
