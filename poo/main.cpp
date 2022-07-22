@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
+#include "aluno.h"
 
 using namespace std;
 
@@ -48,6 +49,14 @@ int main(){
     cout << caneta3->cor << endl;       //Consulta o valor do atributo público e imprime na tela.
     cout << caneta3->ponta << endl;
     cout << caneta3->tampada << endl;  
+
+    system("clear");
+    aluno *aln1=new aluno(0);           //O objeto aln1 é instanciado com o uso do métdo construtor.
+    aln1->Consulta();                   //Utiiza o método Consulta do aln1 para imprimir as informações na tela.
+    aluno *aln2=new aluno(1);
+    aln2->Consulta();
+    aluno *aln3=new aluno(2);
+    aln3->Consulta();
 
     return 0;
 }
