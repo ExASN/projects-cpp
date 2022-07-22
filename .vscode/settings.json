@@ -74,6 +74,11 @@
     "files.associations": {
         "ostream": "cpp",
         "iostream": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "iosfwd": "cpp",
+        "__threading_support": "cpp",
+        "bitset": "cpp",
+        "locale": "cpp",
+        "string": "cpp"
     }
 }
