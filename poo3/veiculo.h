@@ -24,7 +24,7 @@ public:
 };
 
 Veiculo::Veiculo()
-{
+{// 1 - moto; 2 - carro; 3 - onibus; 4 - trator; 5 - tanque
 }
 
 void Veiculo::setTipo(int tp){
@@ -66,7 +66,7 @@ cout<<"Velocidade instatanea..: "<<vel<<endl;
 cout<<"-----------------------------------------------"<<endl;
 }
 
-Veiculo::~Veiculo()// 1 - moto; 2 - carro; 3 - onibus; 4 - trator; 5 - tanque
+Veiculo::~Veiculo()
 {  
 }
 
