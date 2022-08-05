@@ -18,16 +18,17 @@
 //Cabeçalho
 #include <iostream>
 #include <list>         //Biblioteca que possui as funções para manipulação de listas.
-#include <iterator>     //Biblioteca que possui as funções de manipulação do iterator.
+//#include <iterator>     //Biblioteca que possui as funções de manipulação do iterator.
 
 //Definições globais
 using namespace std;
 
 //Algorítimo
 int main(){
-    list <uint16_t> IdPaciente, teste;
-    uint16_t tam;
-    list<int>::iterator itr;     //É criado um vetor do tipo inteiro da classe iterator
+    std::list<int>IdPaciente;
+    std::list<int>teste;
+    int tam;
+    std::list<int>::iterator itr;     //É criado um vetor do tipo inteiro da classe iterator
 
     tam=10;
     for (uint16_t i = 0; i < tam; i++)
@@ -39,7 +40,7 @@ int main(){
         teste.push_front(9);
     }
 
-    itr = IdPaciente.begin();       //A função begin() aponta para o início da lista.
+    itr=IdPaciente.begin();       //A função begin() aponta para o início da lista.
     advance(itr,5);                 //A função advance() avaça no iterator até a posição 5'
     IdPaciente.insert(itr, 0);      //A função insert() insere na lista IdPaciente, na posição iterator, o valor de 0.
     
