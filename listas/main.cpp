@@ -31,11 +31,11 @@ int main(){
     std::list<int>::iterator itr;     //É criado um vetor do tipo inteiro da classe iterator
 
     tam=10;
-    for (uint16_t i = 0; i < tam; i++)
+    for (int i = 0; i < tam; i++)
     {
         IdPaciente.push_front(i);
     }
-    for (uint16_t i = 0; i < 5; i++)    //Com esse for, os elementos da lista teste, de 0 a 4 recebem o valor 9.
+    for (int i = 0; i < 5; i++)    //Com esse for, os elementos da lista teste, de 0 a 4 recebem o valor 9.
     {
         teste.push_front(9);
     }
