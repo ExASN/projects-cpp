@@ -11,13 +11,14 @@ using namespace std;
 
 int main(){
 
-    try{
+    try{                            //Todo o código dentro do try será executado
         vector<int>num(5);
         num.at(4)=10;
         cout<<num[4]<<endl;
-    }catch(exception& erro){
+    }catch(exception& erro){   //O catch contém o resultado do tratamento dos erros
         cout<<"ERRO: "<< erro.what() <<endl;
     }
+
 
     return 0;
 }
