@@ -7,7 +7,8 @@
 
 using namespace std;
 
-auto num{10};
+extern int num{10};
+
 void impNum();
 
 int main(){
