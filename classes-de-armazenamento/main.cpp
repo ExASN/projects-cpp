@@ -7,6 +7,8 @@ int soma(int n1,int n2){
     return n1+n2;
 }
 
+void somador();
+
 int main(){
     auto num{10};
     auto nome{"Expedito Neto"};
@@ -35,7 +37,23 @@ int main(){
     auto res=soma(10.3,5.2);
 
     cout << res << endl;
+    cout << "====================="<<endl;
+    
+    somador();
+    somador();
+    somador();
+    somador();
+    somador();
+    somador();
+    somador();
+    somador();
 
-//Static é um modificador de acesso
     return 0;
+}
+
+//Static é um modificador de acesso. Esse parâmetro define o armazenamento da variável com uma posição estática na memória do pc e por isso essa variável é declarada apenas uma vez, mesmo que sua declaração esteja dentro de um loop de repetição.
+void somador(){
+    static auto x = 0;
+    x++;
+    cout << x << endl;
 }
