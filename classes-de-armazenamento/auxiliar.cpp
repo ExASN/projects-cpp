@@ -2,7 +2,8 @@
 
 using namespace std;
 
-int num;
+extern int num;
+
 void impNum(){
     cout << num << endl;
 }
