@@ -25,7 +25,7 @@ int main()
     // cout << "This is the size of stack: " << numbers.size() << endl;
     // cout << "This is the number on the stack: " << numbers.top() << endl;
 
-    for(int x = numbers.size(); x>0;)
+    while(!numbers.empty())
     {
     cout << "This is the size of stack: " << numbers.size() << endl;
     cout << "This is the number on the stack: " << numbers.top() << endl;
@@ -33,6 +33,7 @@ int main()
     numbers.pop();
     }
     cout << "This is the size of stack: " << numbers.size() << endl;
+    cout << "Teste realizado..."<< endl;
 
     return 0;
 }
