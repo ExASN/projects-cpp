@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 struct RECT
 {
     int32_t lLeft;
@@ -53,11 +53,12 @@ struct RECT
 
     void consult()
     {
-        std::cout << "O Widget possui as seguintes medidas:" << std::endl;
-        // std::cout << "Ponto Inicial - > ( " << getLeft() << " , " << getTop() << " ) " << std::endl;
-        // std::cout << "Ponto Final - > ( " << getRight() << " , " << getBottom() << " ) " << std::endl;
-        // std::cout << "Tamanho - > Comprimento ( " << -1*(getLeft() - getRight()) << " ) " << std::endl;
-        // std::cout << "Tamanho - > Altura ( " << -1*(getTop() - getBottom()) << " ) " << std::endl;
+        cout << "O Widget:" << endl;
+        cout << "P Init - > ( " << getLeft() << " , " << getTop() << " ) " << endl;
+        cout << "P Final - > ( " << getRight() << " , " << getBottom() << " ) " << endl;
+        cout << "Size - > Comp. ( " << -1*(getLeft() - getRight()) << " ) " << endl;
+        cout << "Size - > Alt. ( " << -1*(getTop() - getBottom()) << " ) " << endl;
+
     }
 };
 
